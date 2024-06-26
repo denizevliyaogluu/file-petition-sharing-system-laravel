@@ -37,7 +37,7 @@ class FileCategoriesController extends Controller
     public function updatePost(Request $request, $id)
     {
         $request->validate([
-            'title' => 'required',
+            'name' => 'required',
         ]);
 
         $category = FileCategories::findOrFail($id);

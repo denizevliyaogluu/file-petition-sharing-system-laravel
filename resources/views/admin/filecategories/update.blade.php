@@ -116,7 +116,7 @@
             font-size: 16px;
             color: #495057;
         }
-        
+
         .ck-editor__editable_inline {
             min-height: 300px;
         }
@@ -125,7 +125,7 @@
     <div class="container content-container">
         <h1>Update File Category</h1>
 
-        <form action="{{ route('admin.files.updatePost', $category->id) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('admin.filecategories.updatePost', $category->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -133,7 +133,7 @@
                     required>
             </div>
             <div class="d-flex align-items-center justify-content-center">
-                <button type="submit" class="btn btn-dark mt-3">Update File</button>
+                <button type="submit" class="btn btn-dark mt-3">Update Category</button>
             </div>
         </form>
     </div>
